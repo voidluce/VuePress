@@ -3,11 +3,21 @@ import { defineUserConfig } from 'vuepress'
 import { viteBundler } from '@vuepress/bundler-vite'
 
 export default defineUserConfig({
-  lang: 'en-US',
-
-  title: 'VuePress',
-  description: 'My first VuePress Site',
-
+  base: "/",
+  lang: 'zh-CN',
+  title: 'VuePress模板',
+  description: '一个VuePress模板',
+  head: [
+    ['link', { rel: 'icon', href: '/logo.png' }]
+  ],
+  // host: "0.0.0.0",
+  // port: 8080,
+  // temp: "",
+  // dest: "",
+  // locales: "",
+  // shouldPrefetch
+  // extraWatchFiles
+  // cache
   theme: defaultTheme({
     logo: 'https://vuejs.press/images/hero.png',
 
